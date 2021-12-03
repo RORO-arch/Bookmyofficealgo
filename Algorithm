@@ -1,0 +1,31 @@
+package bookdemo;
+
+import java.util.List;
+
+public class Seatalgo {
+ private int rows[][]={{4,2,4,3},{2,5,2,3}};
+ private int seats_per_row[][]= {{10,5,6,7},{5,4,7,8}};
+ private List<Teams> teams=null;
+
+ private void setrows()
+ {
+	
+ }
+ 
+ private void setseats_per_row()
+ {
+	
+ }
+ 
+ private void setteams()
+ {
+	 Teams teamobj1=new Teams(1,9);
+	 Teams teamobj2=new Teams(2,8);
+	 Teams teamobj3=new Teams(3,7);
+	 Teams teamobj4=new Teams(4,6);
+	 Teams teamobj5=new Teams(5,6);
+	 Teams teamobj6=new Teams(6,4);
+
+ }
+ 
+}
