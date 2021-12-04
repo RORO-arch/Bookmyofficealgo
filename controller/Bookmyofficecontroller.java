@@ -39,8 +39,9 @@ public class Bookmyofficecontroller {
 	}
 	
 	@GetMapping("/details/{id}")
-	public void getdetails(@PathVariable int id ){
-		 bookmyofficerepository.deleteById(id);
+	public List<Bookmyoffice> getdetails(@PathVariable int id ){
+		 return bookmyofficerepository.findByEmpid(id);
 	}
+
 
 }
