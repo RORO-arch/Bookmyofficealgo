@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.project.bookmyseat.repository.Dashboardrepository;
@@ -21,6 +22,12 @@ public class DashboardController {
   public int remainingseats(@PathVariable Date date)
   {
 	  return dashboardrepository.findavailableseats(date);
+  }
+  
+  @PutMapping("/updateseats/{date}")
+  public void updateseats(@PathVariable Date date)
+  {
+	   dashboardrepository.updateseats(date);
   }
 	
 }
